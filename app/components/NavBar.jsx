@@ -16,6 +16,9 @@ export default function NavBar() {
         <Link href="/addevent" className="text-white font-medium hover:underline">
           Add Event
         </Link>
+        <Link href="/contactus" className="text-white font-medium hover:underline">
+          Contact Us
+        </Link>
         <Link href="/profile" className="text-white font-medium hover:underline">
           Profile
         </Link>
