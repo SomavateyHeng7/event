@@ -64,7 +64,7 @@ export default function ContactUsForm() {
                         className="border border-gray-300 px-4 py-2 w-full"
                         type="email"
                         id="email"
-                        placeholder="youremail@example.com"
+                        placeholder="youremail@gmail.com"
                         required
                     />
                 </div>

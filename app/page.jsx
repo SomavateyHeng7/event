@@ -7,6 +7,7 @@ export default function Home() {
       <EventList />
       <EventList />
       <EventList />
+      
     </>
   );
 }

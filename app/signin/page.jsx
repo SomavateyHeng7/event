@@ -7,16 +7,15 @@ export default function SignIn() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission here
+        // You can add logic to handle form submission, such as making an API call.
         console.log('Email:', email);
         console.log('Password:', password);
-        // Add your login logic, e.g., API call
     };
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">
-                <h2 className="text-2xl font-bold mb-4">Sign In</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
                 <div className="mb-4">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                     <input
