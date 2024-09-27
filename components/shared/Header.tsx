@@ -10,21 +10,7 @@ const Header = () => {
     <header className="bg-blue-600 text-white py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
 
-        {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-6">
-          <Button variant="ghost" className="text-white" onClick={() => router.push('/')}>
-            Home
-          </Button>
-          <Button variant="ghost" className="text-white" onClick={() => router.push('/events')}>
-            Events
-          </Button>
-          <Button variant="ghost" className="text-white" onClick={() => router.push('/about')}>
-            About Us
-          </Button>
-          <Button variant="ghost" className="text-white" onClick={() => router.push('/contact')}>
-            Contact
-          </Button>
-        </nav>
+        
 
         {/* Call to Action */}
         <div className="flex items-center space-x-4">

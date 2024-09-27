@@ -21,28 +21,28 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Button variant="link" asChild>
-                  <a href="/find-events" className="text-gray-400 hover:text-orange-500 transition">
+                  <a href="/find-events" className="text-gray-200 hover:text-[#ffa599] transition">
                     Find Events
                   </a>
                 </Button>
               </li>
               <li>
                 <Button variant="link" asChild>
-                  <a href="/create-events" className="text-gray-400 hover:text-orange-500 transition">
+                  <a href="/create-events" className="text-gray-200 hover:text-[#ffa599] transition">
                     Create Events
                   </a>
                 </Button>
               </li>
               <li>
                 <Button variant="link" asChild>
-                  <a href="/help-center" className="text-gray-400 hover:text-orange-500 transition">
+                  <a href="/help-center" className="text-gray-200 hover:text-[#ffa599] transition">
                     Help Center
                   </a>
                 </Button>
               </li>
               <li>
                 <Button variant="link" asChild>
-                  <a href="/tickets" className="text-gray-400 hover:text-orange-500 transition">
+                  <a href="/tickets" className="text-gray-200 hover:text-[#ffa599] transition">
                     Find My Tickets
                   </a>
                 </Button>
@@ -55,22 +55,22 @@ export default function Footer() {
             <h2 className="text-lg font-semibold mb-4">Connect with Us</h2>
             <ul className="flex justify-center sm:justify-start space-x-6">
               <li>
-                <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-orange-500 transition">
+                <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-[#ffa599] transition">
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-orange-500 transition">
+                <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-[#ffa599] transition">
                   <FaTwitter />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-orange-500 transition">
+                <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-[#ffa599] transition">
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-orange-500 transition">
+                <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-[#ffa599] transition">
                   <FaLinkedinIn />
                 </a>
               </li>

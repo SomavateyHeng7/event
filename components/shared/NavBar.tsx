@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
-import Link from 'next/Link';
-import { useRouter } from 'next/navigation'; 
+"use client";
+import React from "react";
+import Link from "next/Link";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -11,21 +11,43 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white shadow-md py-4 px-6 flex justify-between items-center">
-      
       {/* Logo Section */}
-      <div className="flex items-center cursor-pointer" onClick={() => router.push('/')}>
-        <img src="/images/logo.png" alt="Event Logo" className="h-12 w-12 mr-3" />
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={() => router.push("/")}
+      >
+        <img
+          src="/images/logo.png"
+          alt="Event Logo"
+          className="h-12 w-12 mr-3"
+        />
         <h1 className="text-2xl font-bold">PlanIT</h1>
       </div>
-
-      {/* Search Bar */}
-      <div className="flex-1 mx-8">
-        <Input
-          type="text"
-          placeholder="Search for events..."
-          className="w-full"
-        />
-      </div>
+      {/* Navigation Links */}
+      <nav className="hidden md:flex space-x-6">
+        <Button
+          variant="ghost"
+          className="text-black"
+          onClick={() => router.push("/")}
+        >
+          Home
+        </Button>
+       
+        <Button
+          variant="ghost"
+          className="text-black"
+          onClick={() => router.push("/about")}
+        >
+          About Us
+        </Button>
+        <Button
+          variant="ghost"
+          className="text-black"
+          onClick={() => router.push("/contact")}
+        >
+          Contact
+        </Button>
+      </nav>
 
       {/* Profile, Login/Signup Buttons */}
       <div className="flex items-center space-x-4">
@@ -34,12 +56,12 @@ export const Navbar: React.FC = () => {
             <Link href="/profile">
               <span className="text-lg">Profile</span>
             </Link>
-            <Button onClick={() => console.log('Logout')}>Logout</Button>
+            <Button onClick={() => console.log("Logout")}>Logout</Button>
           </>
         ) : (
           <>
             <Link href="/auth/login">
-              <Button>Login</Button>
+              <Button className="bg-[#2b5e9f]">Login</Button>
             </Link>
             <Link href="/auth/signup">
               <Button variant="outline">Sign Up</Button>
